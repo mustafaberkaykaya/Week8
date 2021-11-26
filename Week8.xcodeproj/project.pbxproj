@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		6A7C690E274E8D0A00347DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7C690C274E8D0A00347DFA /* Main.storyboard */; };
 		6A7C6910274E8D0D00347DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7C690F274E8D0D00347DFA /* Assets.xcassets */; };
 		6A7C6913274E8D0D00347DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7C6911274E8D0D00347DFA /* LaunchScreen.storyboard */; };
+		6ADABF99274F942D006BF347 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADABF98274F942D006BF347 /* Result.swift */; };
+		6ADABF9B274F944E006BF347 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADABF9A274F944E006BF347 /* APIResponse.swift */; };
+		6ADABF9F274F9483006BF347 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADABF9E274F9483006BF347 /* URLS.swift */; };
+		6ADABFA3274FA914006BF347 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADABFA2274FA914006BF347 /* CustomTableViewCell.swift */; };
+		6ADABFA72750353E006BF347 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6ADABFA62750353E006BF347 /* IQKeyboardManagerSwift */; };
+		DC9834060EABC09499E1ECB5 /* Pods_Week8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EA27EC766B700AE0FBC2F6 /* Pods_Week8.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,13 @@
 		6A7C690F274E8D0D00347DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7C6912274E8D0D00347DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7C6914274E8D0D00347DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ADABF98274F942D006BF347 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6ADABF9A274F944E006BF347 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		6ADABF9E274F9483006BF347 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		6ADABFA2274FA914006BF347 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A3EA27EC766B700AE0FBC2F6 /* Pods_Week8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E96627793731C6386DEC2F /* Pods-Week8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week8.debug.xcconfig"; path = "Target Support Files/Pods-Week8/Pods-Week8.debug.xcconfig"; sourceTree = "<group>"; };
+		FA35572F60B6814EDCC802FC /* Pods-Week8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week8.release.xcconfig"; path = "Target Support Files/Pods-Week8/Pods-Week8.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +44,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9834060EABC09499E1ECB5 /* Pods_Week8.framework in Frameworks */,
+				6ADABFA72750353E006BF347 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A72C67A2750CF1C00E5D122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6ADABF98274F942D006BF347 /* Result.swift */,
+				6ADABF9A274F944E006BF347 /* APIResponse.swift */,
+				6ADABF9E274F9483006BF347 /* URLS.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A72C67B2750CF2200E5D122 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6ADABFA2274FA914006BF347 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A72C67C2750CF3200E5D122 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A7C690A274E8D0A00347DFA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6A7C68FA274E8D0900347DFA = {
 			isa = PBXGroup;
 			children = (
 				6A7C6905274E8D0A00347DFA /* Week8 */,
 				6A7C6904274E8D0A00347DFA /* Products */,
+				7837214319862FEDDB6CD5AF /* Pods */,
+				78B38837600395BCE3CB0286 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +99,34 @@
 		6A7C6905274E8D0A00347DFA /* Week8 */ = {
 			isa = PBXGroup;
 			children = (
+				6A72C67C2750CF3200E5D122 /* Controller */,
+				6A72C67B2750CF2200E5D122 /* View */,
+				6A72C67A2750CF1C00E5D122 /* Model */,
 				6A7C6906274E8D0A00347DFA /* AppDelegate.swift */,
 				6A7C6908274E8D0A00347DFA /* SceneDelegate.swift */,
-				6A7C690A274E8D0A00347DFA /* ViewController.swift */,
 				6A7C690C274E8D0A00347DFA /* Main.storyboard */,
 				6A7C690F274E8D0D00347DFA /* Assets.xcassets */,
 				6A7C6911274E8D0D00347DFA /* LaunchScreen.storyboard */,
 				6A7C6914274E8D0D00347DFA /* Info.plist */,
 			);
 			path = Week8;
+			sourceTree = "<group>";
+		};
+		7837214319862FEDDB6CD5AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2E96627793731C6386DEC2F /* Pods-Week8.debug.xcconfig */,
+				FA35572F60B6814EDCC802FC /* Pods-Week8.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78B38837600395BCE3CB0286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA27EC766B700AE0FBC2F6 /* Pods_Week8.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +136,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A7C6917274E8D0D00347DFA /* Build configuration list for PBXNativeTarget "Week8" */;
 			buildPhases = (
+				48B58A19E7AA86FAC6973BE3 /* [CP] Check Pods Manifest.lock */,
+				6ADABFA4274FD119006BF347 /* Run SwiftLint */,
 				6A7C68FF274E8D0A00347DFA /* Sources */,
 				6A7C6900274E8D0A00347DFA /* Frameworks */,
 				6A7C6901274E8D0A00347DFA /* Resources */,
+				1A582A7A3B46387E856A29C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Week8;
+			packageProductDependencies = (
+				6ADABFA62750353E006BF347 /* IQKeyboardManagerSwift */,
+			);
 			productName = Week8;
 			productReference = 6A7C6903274E8D0A00347DFA /* Week8.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 6A7C68FA274E8D0900347DFA;
+			packageReferences = (
+				6ADABFA52750353E006BF347 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 6A7C6904274E8D0A00347DFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,13 +203,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A582A7A3B46387E856A29C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week8/Pods-Week8-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week8/Pods-Week8-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Week8/Pods-Week8-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48B58A19E7AA86FAC6973BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Week8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ADABFA4274FD119006BF347 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A7C68FF274E8D0A00347DFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6A7C690B274E8D0A00347DFA /* ViewController.swift in Sources */,
+				6ADABF9F274F9483006BF347 /* URLS.swift in Sources */,
+				6ADABF99274F942D006BF347 /* Result.swift in Sources */,
+				6ADABFA3274FA914006BF347 /* CustomTableViewCell.swift in Sources */,
 				6A7C6907274E8D0A00347DFA /* AppDelegate.swift in Sources */,
+				6ADABF9B274F944E006BF347 /* APIResponse.swift in Sources */,
 				6A7C6909274E8D0A00347DFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +418,7 @@
 		};
 		6A7C6918274E8D0D00347DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2E96627793731C6386DEC2F /* Pods-Week8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +438,7 @@
 		};
 		6A7C6919274E8D0D00347DFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA35572F60B6814EDCC802FC /* Pods-Week8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6ADABFA52750353E006BF347 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6ADABFA62750353E006BF347 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ADABFA52750353E006BF347 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A7C68FB274E8D0900347DFA /* Project object */;
 }
